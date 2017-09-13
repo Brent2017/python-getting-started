@@ -19,6 +19,9 @@ app.register_blueprint(todos_view, url_prefix='/todos')
 def index():
     return render_template('index.html')
 
+@app.route('/PythonTest')
+def PythonTest():
+    return render_template('PythonTest.html')
 
 @app.route('/time')
 def time():
